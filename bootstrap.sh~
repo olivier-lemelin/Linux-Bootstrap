@@ -1,0 +1,49 @@
+#!/bin/bash
+
+#Essentials
+sudo apt-get -y install terminator
+sudo apt-get -y install vim-nox
+sudo apt-get -y install chromium-browser
+sudo apt-get -y install git
+sudo apt-get -y install vlc
+sudo apt-get -y install gimp
+
+#CLI tools
+sudo apt-get -y install curl
+sudo apt-get -y install lynx
+sudo apt-get -y install htop
+
+#Python
+sudo apt-get -y install ipython
+sudo apt-get -y install python-pip
+
+#Java
+sudo apt-get -y install openjdk-7-jre-headless
+
+#Music
+sudo apt-get -y install banshee
+
+#Games
+sudo apt-get -y install zsnes
+sudo apt-get -y install fceu
+
+###########################
+# Cool Stuff (TM)
+###########################
+
+#Add repositories
+sudo add-apt-repository -y ppa:kilian/f.lux
+sudo add-apt-repository -y ppa:markus-lanner/blubphone
+sudo add-apt-repository -y ppa:leo.robol/tastebook
+sudo add-apt-repository -y ppa:noneed4anick/cuttlefish
+sudo add-apt-repository -y ppa:thejambi/thejambi
+
+#Update once and for all
+sudo apt-get -y update
+
+#Install
+sudo apt-get -y install fluxgui
+sudo apt-get -y install blubphone 
+sudo apt-get -y install tastebook
+sudo apt-get -y install cuttlefish
+sudo apt-get -y install dayfolder
