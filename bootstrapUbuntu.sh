@@ -2,6 +2,7 @@
 
 #Essentials
 sudo apt-get -y install zsh
+sudo apt-get -y install tcsh
 sudo apt-get -y install terminator
 sudo apt-get -y install vim-nox
 sudo apt-get -y install git
@@ -10,11 +11,13 @@ sudo apt-get -y install tomboy
 sudo apt-get -y install emacs24
 sudo apt-get -y install virtualbox
 sudo apt-get -y install openssh-server
+sudo apt-get -y install gpa
 
 #CLI tools
 sudo apt-get -y install curl
 sudo apt-get -y install w3m
 sudo apt-get -y install htop
+sudo apt-get -y install powertop
 
 #Python
 sudo apt-get -y install ipython
@@ -43,7 +46,7 @@ sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
 wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu raring-getdeb games" >> /etc/apt/sources.list.d/getdeb.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu saucy-getdeb games" >> /etc/apt/sources.list.d/getdeb.list'
 
 #Update once and for all
 sudo apt-get -y update
