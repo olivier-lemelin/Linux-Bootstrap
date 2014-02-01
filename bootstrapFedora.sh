@@ -1,51 +1,46 @@
 #!/bin/bash
 
-yum -y install wget
-
-#EPEL
-wget http://fedora.mirror.nexicom.net/epel/6/i386/epel-release-6-8.noarch.rpm
-rpm -i epel-release-6-8.noarch.rpm
-
-#RPM Fusion
-wget http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-branched.noarch.rpm
-rpm -i rpmfusion-free-release-branched.noarch.rpm
-
-yum clean all
-yum -y update
-
 #Essentials
-yum -y install zsh
-yum -y install install terminator
-yum -y install vim-nox
-yum -y install chromium-browser
-yum -y install git
-yum -y install gimp
-yum -y install tomboy
-yum -y install emacs24
-yum -y install virtualbox
-yum -y install openssh-server
+sudo yum install -y zsh
+sudo yum install -y terminator
+sudo yum install -y vim-nox
+sudo yum install -y git
+sudo yum install -y gimp
+sudo yum install -y emacs24
+sudo yum install -y virtualbox
+sudo yum install -y openssh-server
+sudo yum install -y gpa
+sudo yum install -y mutt
 
 #CLI tools
-yum -y install curl
-yum -y install w3m
-yum -y install htop
+sudo yum install -y curl
+sudo yum install -y w3m
+sudo yum install -y htop
+sudo yum install -y powertop
 
 #Python
-yum -y install ipython
-yum -y install python-pip
+sudo yum install -y ipython
+sudo yum install -y python-pip
 
 #Multimedia
-yum -y install banshee
-yum -y install vlc
+sudo yum install -y vlc
+
+#Office & Redaction
+sudo yum install -y texlive texlive-latex-extra cm-super gv
 
 #Games
-yum -y install zsnes
-yum -y install fceu
+sudo yum install -y zsnes
+sudo yum install -y fceu
+sudo yum install -y fceux
+sudo yum install -y wine
 
 ###########################
 # Cool Stuff (TM)
 ###########################
 
+#Update once and for all
+sudo apt-get -y update
+
 #Install
-yum -y install skype
-yum -y install sm-ssc
+sudo apt-get install skype
+sudo yum install -y redshift gtk-redshift

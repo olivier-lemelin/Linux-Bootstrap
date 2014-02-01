@@ -2,6 +2,7 @@
 
 #Essentials
 sudo apt-get -y install zsh
+sudo apt-get -y install tcsh
 sudo apt-get -y install terminator
 sudo apt-get -y install vim-nox
 sudo apt-get -y install git
@@ -12,8 +13,6 @@ sudo apt-get -y install virtualbox
 sudo apt-get -y install openssh-server
 sudo apt-get -y install gpa
 sudo apt-get -y install mutt
-sudo apt-get -y install keepassx
-sudo apt-get -y install tmux
 
 #CLI tools
 sudo apt-get -y install curl
@@ -25,17 +24,13 @@ sudo apt-get -y install powertop
 sudo apt-get -y install ipython
 sudo apt-get -y install python-pip
 
-#Development
-sudo apt-get -y install arduino arduino-core
-
 #Java
-sudo apt-get purge openjdk*
+#sudo apt-get purge openjdk*
 
 #Multimedia
 sudo apt-get -y install banshee
 sudo apt-get -y install vlc
 sudo apt-get install non-free-codecs libxine1-ffmpeg gxine mencoder totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 mpg321 mpg123libjpeg-progs
-sudo apt-get -y install picard
 
 #Office & Redaction
 sudo apt-get -y install texlive texlive-latex-extra cm-super gv
@@ -46,16 +41,13 @@ sudo apt-get -y install fceu
 sudo apt-get -y install fceux
 sudo apt-get -y install wine
 
-#Music-making
-sudo apt-get -y install milytracker
-
 ###########################
 # Cool Stuff (TM)
 ###########################
 
 #Add repositories
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo add-apt-repository -y "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+#sudo add-apt-repository -y ppa:webupd8team/java
+#sudo add-apt-repository -y "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
 wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu saucy-getdeb games" >> /etc/apt/sources.list.d/getdeb.list'
