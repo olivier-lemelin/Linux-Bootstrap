@@ -14,12 +14,19 @@ sudo apt-get -y install gpa
 sudo apt-get -y install mutt
 sudo apt-get -y install keepassx
 sudo apt-get -y install tmux
+sudo apt-get -y install encfs
+sudo apt-get -y install gtk-redshift
+sudo apt-get -y install gedit
 
 #CLI tools
 sudo apt-get -y install curl
+sudo apt-get -y install lynx
 sudo apt-get -y install w3m
 sudo apt-get -y install htop
 sudo apt-get -y install powertop
+
+# VM Management
+sudo apt-get -y install virt-manager
 
 #Python
 sudo apt-get -y install ipython
@@ -27,6 +34,8 @@ sudo apt-get -y install python-pip
 
 #Development
 sudo apt-get -y install arduino arduino-core
+sudo apt-get -y install gdb
+sudo apt-get -y install build-essential
 
 #Java
 sudo apt-get purge openjdk*
@@ -38,16 +47,19 @@ sudo apt-get install non-free-codecs libxine1-ffmpeg gxine mencoder totem-mozill
 sudo apt-get -y install picard
 
 #Office & Redaction
-sudo apt-get -y install texlive texlive-latex-extra cm-super gv
+sudo apt-get -y install texlive texlive-lang-french texlive-latex-extra cm-super gv
 
 #Games
 sudo apt-get -y install zsnes
 sudo apt-get -y install fceu
 sudo apt-get -y install fceux
 sudo apt-get -y install wine
+sudo apt-get -y install stone-soup
+sudo apt-get -y install steam
+sudo apt-get -y install visualboyadvance-gtk
 
 #Music-making
-sudo apt-get -y install milytracker
+sudo apt-get -y install milkytracker
 
 ###########################
 # Cool Stuff (TM)
