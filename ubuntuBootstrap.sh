@@ -2,10 +2,6 @@
 
 sudo apt-get -y install curl
 
-# Steam
-wget http://media.steampowered.com/client/installer/steam.deb
-sudo dpkg -i steam.deb
-
 #Essentials
 sudo apt-get -y install pass
 sudo apt-get -y install zsh
@@ -36,7 +32,6 @@ sudo apt-get -y install flashplugin-installer
 
 #CLI tools
 sudo apt-get -y install lynx
-sudo apt-get -y install w3m
 sudo apt-get -y install htop
 sudo apt-get -y install powertop
 
@@ -52,6 +47,15 @@ sudo apt-get -y install python-pip
 sudo apt-get -y install arduino arduino-core
 sudo apt-get -y install gdb
 sudo apt-get -y install build-essential
+sudo apt-get -y install meld
+
+#Node
+sudo apt-get -y install node npm
+
+#Sublime
+sudo add-apt-repository ppa:webupd8team/sublime-text-2
+sudo apt-get update
+sudo apt-get install sublime-text
 
 #Multimedia
 sudo apt-get -y install vlc
@@ -64,9 +68,9 @@ sudo apt-get -y install texmaker
 sudo apt-get -y install libreoffice
 sudo apt-get -y install xournal #PDF Editor!
 
-# Ghost Blogging stuff (hosted on OpenShift)
-sudo apt-get install ruby-full rubygems git-core
-sudo gem install rhc
+# Steam
+wget http://media.steampowered.com/client/installer/steam.deb
+sudo dpkg -i steam.deb
 
 #Games
 sudo apt-get -y install zsnes
@@ -79,8 +83,6 @@ sudo apt-get -y install desmume
 sudo apt-get -y install pcsxr
 sudo apt-get -y install mupen64plus
 sudo apt-get -y install gens
-wget http://www.emulationstation.org/downloads/releases/emulationstation_amd64_latest.deb
-sudo dpkg -i emulationstation_amd64_latest.deb
 
 #Music-making
 sudo apt-get -y install milkytracker
@@ -88,14 +90,8 @@ sudo apt-get -y install milkytracker
 # Japanese language support
 sudo apt-get -y install anthy
 
-## Graphics card
-# wget http://www2.ati.com/drivers/linux/amd-catalyst-14-9-linux-x86-x86-64.zip
-# sudo apt-get -y install dh-modaliases execstack debhelper
-# unzip amd-catalyst-*
-# cd fglrx*
-# chmod +x amd-driver-installer-14.301.1001-x86.x86_64.run
-# sudo ./amd-driver-installer-14.301.1001-x86.x86_64.run
-# cd ..
+# Fonts
+sudo apt-get -y install fonts-inconsolata
 
 ###########################
 # Cool Stuff (TM)
@@ -104,15 +100,15 @@ sudo apt-get -y install anthy
 #Add repositories
 sudo add-apt-repository -y "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
-wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb games" >> /etc/apt/sources.list.d/getdeb.list'
+#wget -q -O - http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb games" >> /etc/apt/sources.list.d/getdeb.list'
 
 #Update once and for all
 sudo apt-get -y update
 
 #Install
-sudo apt-get -y install skype
-sudo apt-get -y install sm-ssc
+#sudo apt-get -y install skype
+#sudo apt-get -y install sm-ssc
 sudo apt-get -y install redshift gtk-redshift
 
 sudo apt-get -y upgrade
